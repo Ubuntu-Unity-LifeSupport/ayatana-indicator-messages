@@ -1,3 +1,14 @@
+ayatana-indicator-messages (24.5.1-1build1+unity1) resolute; urgency=medium
+
+  * debian/ayatana-indicator-messages.links: link the indicator into
+    /usr/share/unity/indicators, so Unity's panel shows it (with
+    libindicator 0ubuntu8+unity2, which accepts Ayatana indicators). 26.04's
+    libmessaging-menu is this one, so Geary, Pidgin and other clients had
+    no messaging menu under Unity. The service already starts in Unity
+    from its XDG autostart entry.
+
+ -- Ubuntu Unity Life Support <mihail.rozshko@gmail.com>  Sat, 26 Sep 2026 17:39:03 +0000
+
 ayatana-indicator-messages (24.5.1-1build1) resolute; urgency=medium
 
   * No-change mass rebuild for Ubuntu 26.04 (LP: #2132257)
