@@ -1,0 +1,213 @@
+ayatana-indicator-messages (24.5.1-1build1) resolute; urgency=medium
+
+  * No-change mass rebuild for Ubuntu 26.04 (LP: #2132257)
+
+ -- Graham Inggs <ginggs@ubuntu.com>  Tue, 13 Jan 2026 20:17:55 +0000
+
+ayatana-indicator-messages (24.5.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.7.2. No changes needed.
+  * debian/copyright:
+    + White-space fixes.
+    + Update copyright attributions for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 12 Mar 2025 13:15:38 +0100
+
+ayatana-indicator-messages (24.5.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Move from R: to S: <indicator-renderer> packages. These should be pulled-
+      in via the desktop environment where AyatanaIndicators get used.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Jan 2025 10:41:10 +0100
+
+ayatana-indicator-messages (24.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version to 4.7.0. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 22 May 2024 09:06:23 +0200
+
+ayatana-indicator-messages (23.10.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + In B-D, switch from systemd to systemd-dev. (Closes: #1060472).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 May 2024 16:19:26 +0200
+
+ayatana-indicator-messages (23.10.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop all patches. All shipped upstream.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update auto-generated copyright.in file.
+    + Update copyright attribution for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 Feb 2024 15:49:17 +0100
+
+ayatana-indicator-messages (22.9.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.1. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+    + Update auto-generated copyright.in file.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 02 Oct 2022 12:58:45 +0200
+
+ayatana-indicator-messages (22.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 18 Feb 2022 17:09:42 +0100
+
+ayatana-indicator-messages (21.12.0-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Upstream version bump to something >= 14 to resolve versioning
+      conflict with indicator-messages in Ubuntu. (Closes: #1000801).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Dec 2021 22:51:02 +0100
+
+ayatana-indicator-messages (0.9.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Adjust to build system switch (autotools -> CMake).
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/copyright:
+    + Update auto-generated copyright.in reference file.
+    + Update copyright attributions.
+  * debian/rules:
+    + Adjust for upstream version 0.9.0.
+    + Use upstream's NEWS file as upstream ChangeLog.
+  * debian/libmessaging-menu0.symbols:
+    + Fix dev:pkg name in Build-Depends-Package: metadata field.
+  * debian/upstream/metadata:
+    + Update points of contact, put UBports Foundation in Donation: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Nov 2021 16:54:43 +0100
+
+ayatana-indicator-messages (0.8.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.5.1. No changes needed.
+    + Fix capitalization of the word 'Xfce'.
+  * debian/watch:
+    + Update format version to 4.
+  * debian/rules:
+    + Move gtk-doc html files into package's doc folder.
+  * debian/libmessaging-menu-dev.doc-base:
+    + Add file.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 03 Feb 2021 13:15:27 +0100
+
+ayatana-indicator-messages (0.8.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add Debian UBports Team to Uploaders: field.
+    + Mention desktop envs that support system indicators in LONG_DESCRIPTION.
+    + Typo fix in LONG_DESCRIPTION.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 07 Nov 2020 15:12:17 +0100
+
+ayatana-indicator-messages (0.8.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 10 Sep 2020 22:36:48 +0200
+
+ayatana-indicator-messages (0.8.0-3) unstable; urgency=medium
+
+  * Source-only upload as is.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 11:56:27 +0200
+
+ayatana-indicator-messages (0.8.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add B-D systemd for [linux-any] architectures.
+    + Add B-D: dh-exec.
+  * debian/ayatana-indicator-messages.install:
+    + Install systemd service file only for [linux-any] architectures.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 11:49:04 +0200
+
+ayatana-indicator-messages (0.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Add to D (ayatana-indicator-messages): ayatana-indicator-common
+      (>= 0.8.0).
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/ayatana-indicator-messages.install:
+    + Drop upstart conf file, add systemd service file.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 09:48:49 +0200
+
+ayatana-indicator-messages (0.6.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump DH compat level to version 13.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 06 Aug 2020 14:20:11 +0200
+
+ayatana-indicator-messages (0.6.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Stop using deprecated g_type_class_add_private. (Closes: #951994).
+  * debian/patches:
+    + Drop 0001_Fix-pkg-config-file-library-and-path-flags.patch. Applied
+      upstream.
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Add Rules-Requires-Root: field and set it to 'no'.
+  * debian/{control,compat}:
+    + Switch to debhelper-compat notation, bump DH compat level to version 12.
+  * debian/rules:
+    + Switch from dh_install --fail-missing to dh_missing --fail-missing.
+  * debian/ayatana-indicator-messages.install:
+    + Adapt installation path. Service executable now gets installed to
+      /usr/libexec/.
+  * debian/libmessaging-menu0.symbols:
+    + Add Build-Depends-Package: metadata field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Feb 2020 10:08:04 +0100
+
+ayatana-indicator-messages (0.6.0-3) unstable; urgency=medium
+
+  * debian/control:
+    + Add B/R for indicator-messages. The a-i-messages and i-messages bin:pkgs
+      share the same artwork files.
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/patches:
+    + Add 0001_Fix-pkg-config-file-library-and-path-flags.patch. Adapt paths and
+      filenames to recently reworked install target. (Closes: #923958).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Aug 2019 01:54:05 +0200
+
+ayatana-indicator-messages (0.6.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Update Vcs-*: fields. Packaging Git has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.2.0. No changes needed.
+  * debian/upstream/metadata:
+    + Add file. Comply with DEP-12.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Aug 2018 18:51:18 +0200
+
+ayatana-indicator-messages (0.6.0-1) unstable; urgency=medium
+
+  * Initial release to Debian. (Closes: #893875).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 23 Mar 2018 15:16:57 +0100

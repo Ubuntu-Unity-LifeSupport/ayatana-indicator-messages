@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@/messaging-menu
+
+Name: Ayatana Messaging Menu Library
+Description: Ayatana Messaging Menu client library
+Version: @PROJECT_VERSION@
+Requires: gio-unix-2.0
+Libs: -L${libdir} -lmessaging-menu
+Cflags: -I${includedir}
